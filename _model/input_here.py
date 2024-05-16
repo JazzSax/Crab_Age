@@ -11,14 +11,14 @@ predictor.fit_scaler(X_train)
 
 
 new_data = pd.DataFrame({
-    'Sex': ['I'],
-    'Length': [0.7875],
-    'Diameter': [0.6125],
-    'Height': [0.2125],
-    'Weight': [4.06815325],
-    'Shucked Weight': [1.5025235],
-    'Viscera Weight': [1.34660125],
-    'Shell Weight': [1.417475]
+    'Sex': ['F'],
+    'Length': [1.55],
+    'Diameter': [1.2125],
+    'Height': [0.4375],
+    'Weight': [34.45881725],
+    'Shucked Weight': [15.4504775],
+    'Viscera Weight': [7.1724235],
+    'Shell Weight': [9.7805775]
 })
 
 predictions = predictor.predict_age(new_data)
