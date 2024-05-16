@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crab Details</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .top-half, .bottom-half {
+            height: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .top-half {
+            background-color: #e0e0e0;
+        }
+        .bottom-half {
+            background-color: #f0f0f0;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-half">
+            <h2>Input Crab Details</h2>
+            <form>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="sex">Sex</label>
+                        <input type="text" class="form-control" id="sex" name="sex">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="length">Length</label>
+                        <input type="number" class="form-control" id="length" name="length">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="diameter">Diameter</label>
+                        <input type="number" class="form-control" id="diameter" name="diameter">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="height">Height</label>
+                        <input type="number" class="form-control" id="height" name="height">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="weight">Weight</label>
+                        <input type="number" class="form-control" id="weight" name="weight">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="shucked-weight">Shucked Weight</label>
+                        <input type="number" class="form-control" id="shucked-weight" name="shucked-weight">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="viscera-weight">Viscera Weight</label>
+                        <input type="number" class="form-control" id="viscera-weight" name="viscera-weight">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="shell-weight">Shell Weight</label>
+                        <input type="number" class="form-control" id="shell-weight" name="shell-weight">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" id="age" name="age">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="bottom-half">
+            <h2>Crab Details</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Sex</th>
+                        <th>Length</th>
+                        <th>Diameter</th>
+                        <th>Height</th>
+                        <th>Weight</th>
+                        <th>Shucked Weight</th>
+                        <th>Viscera Weight</th>
+                        <th>Shell Weight</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
