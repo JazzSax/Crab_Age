@@ -19,6 +19,9 @@ class MyQueries():
                 myCursor.execute("Select * From info")
                 result = myCursor.fetchall()
                 return result
+        def showOutput(self):
+                pass
+
 
         
 
