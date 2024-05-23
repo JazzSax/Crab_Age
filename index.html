@@ -6,6 +6,44 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="index.css">
   <title>Document</title>
+  <style>
+      .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .content h3 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+
+    }
+
+    .content form {
+      display: inline-block;
+    }
+
+    .content input[type="submit"] {
+      padding: 10px 20px;
+      margin: 10px;
+      border: 2px solid #fff;
+      background-color: transparent;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .content input[type="submit"]:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  </style>
 </head>
 <body>
   <section class="showcase">
@@ -13,9 +51,13 @@
       <video src="video\crabs.mp4" autoplay muted loop></video>
     </div>
     <div class="content">
-      <h1>Shoot For The Stars</h1>
-      <h3>Full screen video landing page</h3>
-      <a href="#about" class="btn">Read More</a>
+      <form action="controller/MyController.py">
+        <h1>Crab Age Prediction</h1>
+        <h3>Predict the crab age based on some attributes</h3>
+        <input type ="submit" name ="ALL" value = "View Records"/>
+        <input type ="submit" name ="ADD" value = "Add Record"/>
+      </form>
+  
     </div>
   </section>
 
