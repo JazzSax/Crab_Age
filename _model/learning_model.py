@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 from joblib import dump
 
-df = pd.read_csv(r'C:\Users\Cliff\Desktop\3rd Year 3rd Sem\IT140P\Crab_Age\_model\CrabAgePrediction.csv')
+df = pd.read_csv(r'C:\xampp\htdocs\source\IT140P\Crab_Age\trained_model.joblib')
 print(df.head())
 
 df = pd.get_dummies(df, columns=['Sex'], drop_first=True, dtype=int)

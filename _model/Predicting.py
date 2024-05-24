@@ -5,7 +5,7 @@ import sys
 from os import path
 from learning_model import X_train  
 class CrabAgePredictor:
-    def __init__(self, model_path=r'C:\Users\Cliff\Desktop\3rd Year 3rd Sem\IT140P\Crab_Age\_model\trained_model.joblib'):
+    def __init__(self, model_path=r'C:\xampp\htdocs\source\IT140P\Crab_Age\trained_model.joblib'):
         self.model = load(model_path)
         self.scaler = None  
 
