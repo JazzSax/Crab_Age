@@ -4,9 +4,10 @@ script_dir = os.path.dirname(os.path.dirname(__file__))
 
 
 def view():
-    sys.path.append(script_dir + "/view/")
+    sys.path.append(script_dir + "/view/")    
+    #print("<script type='text/javascript'> alert ('functions');</script>")
     from Views import Views
-    view = Views()
+    view = Views()    
     view.viewAll()
 
 def input():

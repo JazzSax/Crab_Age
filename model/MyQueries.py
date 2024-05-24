@@ -8,8 +8,10 @@ class MyQueries():
                 self.mydb = self.conn.connect()
         
         def addRecord(self, sex, length, diameter, height, weight, shucked, viscera, shell,age ):
+                print(f"<script type='text/javascript'> alert ('mmmmm');</script>")
                 mycursor = self.mydb.cursor()
                 sql = "INSERT INTO info (sex,length,diameter,height,weight,shucked,viscera,shell, age) VALUES ('"+str(sex)+"','"+str(length)+"','"+str(diameter)+"','"+str(height)+"','"+str(weight)+"','"+str(shucked)+"','"+str(viscera)+"','"+str(shell)+"','"+str(age)+"')"
+                #sql = "INSERT INTO info (sex,length,diameter,height,weight,shucked,viscera,shell, age) VALUES ('1','1','1','1','1','1','1','1','1')"
                 mycursor.execute(sql)
                 self.mydb.commit()
                 result=mycursor.rowcount, "Record Added!"  

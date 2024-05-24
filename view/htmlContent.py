@@ -422,7 +422,7 @@ body {
             </div>
          
         </div>
-        <form  action="controller/MyController.py" class="signupForm" name="signupform">
+        <form  action="ContentController.py" class="signupForm" name="signupform">
           <h2>Crab Input</h2>
           <ul class="noBullet">
             <li>

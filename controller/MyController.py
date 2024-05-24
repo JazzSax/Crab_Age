@@ -1,4 +1,4 @@
-#import python path
+#!/Python37/python
 print("Content-Type: text/html")
 print()
 import cgi
@@ -13,10 +13,12 @@ all = form.getvalue("ALL")
 add = form.getvalue("ADD")
 
 if(all):
+    #print("<script type='text/javascript'> alert ('aaaa');</script>")
     from Functions import view
     view()
 if(add):
     from Functions import input
     input()
+
 
 
