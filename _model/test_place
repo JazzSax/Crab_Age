@@ -1,0 +1,6 @@
+from input_here import input
+
+
+inputtest = input()
+inputtest.predikt('F', 1.55, 1.2125, 0.4375, 34.45881725, 15.4504775, 7.1724235, 9.7805775)
+print(inputtest)

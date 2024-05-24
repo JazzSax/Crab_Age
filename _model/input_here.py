@@ -6,21 +6,25 @@ import sys
 from os import path
 from learning_model import X_train  
 
-predictor = CrabAgePredictor()
-predictor.fit_scaler(X_train)
+class input():
+
+    def predikt(self, sexx,  lngth,  diam,  hght,  wght,  shkwght,  vscwght,   shllwght):
+        predictor = CrabAgePredictor()
+        predictor.fit_scaler(X_train)
 
 
-new_data = pd.DataFrame({
-    'Sex': ['F'],
-    'Length': [1.55],
-    'Diameter': [1.2125],
-    'Height': [0.4375],
-    'Weight': [34.45881725],
-    'Shucked Weight': [15.4504775],
-    'Viscera Weight': [7.1724235],
-    'Shell Weight': [9.7805775]
-})
+        new_data = pd.DataFrame({
+            'Sex': [sexx],
+            'Length': [lngth],
+            'Diameter': [diam],
+            'Height': [hght],
+            'Weight': [wght],
+            'Shucked Weight': [shkwght],
+            'Viscera Weight': [vscwght],
+            'Shell Weight': [shllwght]
+        })
 
-predictions = predictor.predict_age(new_data)
-final_age = str(predictions[0]) 
-print("The predicted age is: " + final_age + " months.")
+        predictions = predictor.predict_age(new_data)
+        final_age = str(predictions[0]) 
+        print("The predicted age is: " + final_age + " months.")
+        return final_age
