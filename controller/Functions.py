@@ -17,7 +17,6 @@ def input():
      view.showForm()
 
 def output(sex, length, diameter, height, weight, shucked, viscera, shell, age):
-     print(f"<script type='text/javascript'> alert ('show1');</script>")
      sys.path.append(script_dir + "/view/")
      from Views import Views
      view = Views()
