@@ -20,4 +20,4 @@ def output(sex, length, diameter, height, weight, shucked, viscera, shell, age):
      sys.path.append(script_dir + "/view/")
      from Views import Views
      view = Views()
-     view.showPrediction(sex, length, diameter, height, weight, shucked, viscera, shell, age)
+     view.showOutput(sex, length, diameter, height, weight, shucked, viscera, shell, age)

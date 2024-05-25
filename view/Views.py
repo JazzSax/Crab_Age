@@ -8,6 +8,5 @@ class Views():
         print(htmlContent.viewAll())
     def showForm(self):
         print(htmlContent.showForm())
-    def showPrediction(self, sex, length, diameter, height, weight, shucked, viscera, shell, age):
-        print(htmlContent.showPrediction(sex, length, diameter, height, weight, shucked, viscera, shell, age))
-     
+    def showOutput(self, sex, length, diameter, height, weight, shucked, viscera, shell, age):
+        print(htmlContent.showOutput(sex, length, diameter, height, weight, shucked, viscera, shell, age))

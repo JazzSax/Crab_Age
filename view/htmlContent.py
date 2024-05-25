@@ -456,15 +456,14 @@ body {
             <li>
               <label for="shell_weight"></label>
               <input type="text" class="form-control inputFields" id="shell_weight" name="shell_weight" placeholder="Shell Weight" value="" required>
-            </li>       
-                 
-            <li id="center-btn">
+            </li>
+                 <li id="center-btn">
             <button type="button" id="join-btn" onclick="history.back()">Back</button>
             </li>
             <li id="center-btn">
               <input type="submit" id="join-btn" name="predict" alt="Join" value="Predict">
             </li>
-        
+       
           </ul>
         </form>
       </div>
@@ -474,8 +473,8 @@ body {
 '''
     return inputForm
 
-def showPrediction(sex, length, diameter, height, weight, shucked, viscera, shell, age):
-    outputForm = '''
+def showOutput(sex, length, diameter, height, weight, shucked, viscera, shell, age):
+    inputForm = '''
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -644,7 +643,7 @@ body {
             <button type="button" id="join-btn" onclick="history.back()">Back</button>
             </li>
             <li id="center-btn">
-              <input type="submit" id="join-btn" name="add" alt="Join" value="Add to Records">
+              <input type="submit" id="join-btn" name="add" alt="Add" value="Add to Records">
             </li>
         
           </ul>
@@ -654,4 +653,4 @@ body {
 </html>
 
 '''
-    return outputForm
+    return inputForm
