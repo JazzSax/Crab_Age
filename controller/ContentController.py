@@ -12,33 +12,31 @@ form = cgi.FieldStorage()
 #print("<script type='text/javascript'> alert ('controlle r1');</script>")
 
 class Controller():
-    def __init__(self, sex, length, diameter, height, weight, shucked, viscera, shell, age):
-        self.sex = sex
-        self.length = length
-        self.diameter = diameter
-        self.height = height
-        self.weight = weight
-        self.shucked = shucked
-        self.viscera = viscera
-        self.shell = shell
-        self.age = age
+    def __init__(self):
+        # self.sex = sex
+        # self.length = length
+        # self.diameter = diameter
+        # self.height = height
+        # self.weight = weight
+        # self.shucked = shucked
+        # self.viscera = viscera
+        # self.shell = shell
+        # self.age = age
+        pass
 
-    def Add(self):
-        sys.path.append(script_dir + "/model/")    
-        #print(f"<script type='text/javascript'> alert ('{self.age}');</script>")
-        from MyQueries import MyQueries 
-        mq = MyQueries()
-        message = mq.addRecord(self.sex, self.length, self.diameter, self.height, self.weight, self.shucked, self.viscera, self.shell, self.age)
-        print(f"<script type='text/javascript'> alert ('{message}');</script>")
+    def Show(self, sex, length, diameter, height, weight, shucked, viscera, shell, age):        
+        from Functions import output
+        output(sex, length, diameter, height, weight, shucked, viscera, shell, age)
 
-    # def ShowAll():
-    #     from MyQueries import MyQueries as mq
-    #     mq.showAll()
+    def Predict(self, sex, length, diameter, height, weight, shucked, viscera, shell):
+        print("<script type='text/javascript'> alert ('Predict method');</script>")
+        sys.path.append(script_dir + "/_model/")
+        from ShowPrediction import Prediction
+        p = Prediction(sex, length, diameter, height, weight, shucked, viscera, shell)
+        age = int(p.GetPrediction())
+        #print(f"<script type='text/javascript'> alert ('{age}');</script>")
+        return age
     
-    # def ShowOutput():
-    #     from MyQueries import MyQueries as mq
-    #     mq.showOutput()
-
 
 # From fields
 getSex = form.getvalue("sex")
@@ -49,23 +47,13 @@ getWeight = form.getvalue("weight")
 getShucked = form.getvalue("shucked_weight")
 getViscera = form.getvalue("viscera_weight")
 getShell = form.getvalue("shell_weight")
-#getAge = form.getWeight("age")
 
 # from buttons
-getPredict = form.getvalue("join")
-# getShowAll = form.getvalue("all")
-# getShowOutput = form.getvalue("output")
+getPredict = form.getvalue("predict")
 
 if (getPredict):
-    #print("<script type='text/javascript'> alert ('if');</script>")
-    c = Controller(getSex, getLength, getDiameter, getHeight, getWeight, getShucked, getViscera, getShell, "10")
-    c.Add()
-
-# if str(getShowAll) != "None":
-#     from MyController import Controller as c
-#     c.ShowAll()
-
-# if str(getShowOutput) != "None":
-#     from MyController import Controller as c
-#     c.ShowOutput()
+    print("<script type='text/javascript'> alert ('if');</script>")
+    c = Controller()
+    age = c.Predict(getSex, getLength, getDiameter, getHeight, getWeight, getShucked, getViscera, getShell)
+    c.Show(getSex, getLength, getDiameter, getHeight, getWeight, getShucked, getViscera, getShell, age) #show prediction to user
 

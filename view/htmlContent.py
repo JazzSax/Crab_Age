@@ -456,18 +456,15 @@ body {
             <li>
               <label for="shell_weight"></label>
               <input type="text" class="form-control inputFields" id="shell_weight" name="shell_weight" placeholder="Shell Weight" value="" required>
-            </li>
-            <li>
-              <label for="age"></label>
-              <input type="text" class="form-control inputFields" id="age" name="age" placeholder="Age" value="" readonly>
-            </li>
-                 <li id="center-btn">
+            </li>       
+                 
+            <li id="center-btn">
             <button type="button" id="join-btn" onclick="history.back()">Back</button>
             </li>
             <li id="center-btn">
-              <input type="submit" id="join-btn" name="join" alt="Join" value="Predict">
+              <input type="submit" id="join-btn" name="predict" alt="Join" value="Predict">
             </li>
-       
+        
           </ul>
         </form>
       </div>
@@ -476,3 +473,185 @@ body {
 
 '''
     return inputForm
+
+def showPrediction(sex, length, diameter, height, weight, shucked, viscera, shell, age):
+    outputForm = '''
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background:#00172D;
+  background-repeat: no-repeat;
+}
+
+.signupSection {
+  background: linear-gradient(to right, #0052A2, #00172D);
+  
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 900px;
+  text-align: center;
+  display: flex;
+  color: white;
+  box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+  width: 45%;
+  background: rgba(20, 20, 20, 0.8);
+  padding: 30px 0;
+  border-right: 5px solid rgba(30, 30, 30, 0.8);
+  h2 {
+    padding-top: 100px;
+    font-weight: 300;
+  }
+  p {
+    font-size: 18px;
+  }
+  .icon {
+    font-size: 8em;
+    padding: 20px 0;
+    color: rgba(10, 180, 180, 1);
+  }
+}
+
+.details{
+    height: 100%;
+    margin:auto;
+}
+.signupForm {
+  width: 70%;
+  padding: 30px 0;
+  background: rgba(20, 40, 40, 0.8);
+  transition: 0.2s;
+  h2 {
+    font-weight: 300;
+  }
+}
+
+.inputFields {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid rgba(10, 180, 180, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, 0.2);
+  color: white;
+  outline: none;
+}
+
+.noBullet {
+  list-style-type: none;
+  padding: 0;
+}
+
+#center-btn {
+  display: inline-block;
+  margin: 0 10px;
+}
+#join-btn {
+  border: 1px solid rgba(10, 180, 180, 1);
+  background: rgba(20, 20, 20, 0.6);
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: 0.4s;
+  &:hover {
+    background: rgba(20, 20, 20, 0.8);
+    padding: 10px 80px;
+  }
+}
+
+    </style>
+  
+
+</head>
+<body>
+    <div class="signupSection">
+        <div class="info">
+            <div class="details">
+                <h2>Mission to Save Crab</h2>
+                <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+                <p>The Future Is Here</p>
+            </div>
+         
+        </div>
+        <form  action="ContentController.py" class="signupForm" name="signupform">
+          <h2>Crab Input</h2>
+          <ul class="noBullet">
+            <li>
+              <label for="sex"></label>
+              <input type="text" class="form-control inputFields" id="sex" name="sex" value="'''+sex+'''"  readonly>
+          </li>
+            <li>
+              <label for="length"></label>
+              <input type="text" class="form-control inputFields" id="length" name="length" value="'''+length+'''" readonly />
+            </li>
+            <li>
+              <label for="diameter"></label>
+              <input type="text" class="form-control inputFields" id="diameter" name="diameter" value="'''+diameter+'''" readonly>
+            </li>
+            <li>
+              <label for="height"></label>
+              <input type="text" class="form-control inputFields" id="height" name="height" value="'''+height+'''" readonly>
+            </li>
+            <li>
+              <label for="weight"></label>
+              <input type="text" class="form-control inputFields" id="weight" name="weight" value="'''+weight+'''" readonly>
+            </li>
+            <li>
+              <label for="shucked_weight"></label>
+              <input type="text" class="form-control inputFields" id="shucked_weight" name="shucked_weight" value="'''+shucked+'''" readonly>
+            </li>
+            <li>
+              <label for="viscera_weight"></label>
+              <input type="text" class="form-control inputFields" id="viscera_weight" name="viscera_weight" value="'''+viscera+'''" readonly>
+            </li>
+            <li>
+              <label for="shell_weight"></label>
+              <input type="text" class="form-control inputFields" id="shell_weight" name="shell_weight" value="'''+shell+'''" readonly>
+            </li>
+            <li>
+              <label for="age"></label>
+              <input type="text" class="form-control inputFields" id="age" name="age" value="'''+age+'''" readonly>
+            </li>
+                 <li id="center-btn">
+            <button type="button" id="join-btn" onclick="history.back()">Back</button>
+            </li>
+            <li id="center-btn">
+              <input type="submit" id="join-btn" name="add" alt="Join" value="Add to Records">
+            </li>
+        
+          </ul>
+        </form>
+      </div>
+</body>
+</html>
+
+'''
+    return outputForm
