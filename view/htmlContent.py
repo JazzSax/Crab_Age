@@ -1,10 +1,8 @@
 
 
-def viewAll():
-    viewAllString = '''
-
-
-<!DOCTYPE html>
+def viewAll(allRecords):
+    
+  print('''<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -139,139 +137,15 @@ section {
     <div class="tbl-content">
       <table cellpadding="0" cellspacing="0" >
         <tbody>
-          <tr>
-            <td>AAC</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-          </tr>
-          <tr>
-            <td>AAC</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-          </tr>
-          <tr>
-            <td>AAC</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-          </tr>
-          <tr>
-            <td>XXD</td>
-            <td>ADITYA BIRLA</td>
-            <td>$1.02</td>
-            <td>-1.01</td>
-            <td>+2.36%</td>
-            <td>ADITYA BIRLA</td>
-            <td>$1.02</td>
-            <td>-1.01</td>
-            <td>+2.36%</td>
-          </tr>
-          <tr>
-            <td>AAC</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-          </tr>
-          <tr>
-            <td>AAD</td>
-            <td>AUSENCO</td>
-            <td>$2.38</td>
-            <td>-0.01</td>
-            <td>-1.36%</td>
-            <td>AUSENCO</td>
-            <td>$2.38</td>
-            <td>-0.01</td>
-            <td>-1.36%</td>
-          </tr>
-          <tr>
-            <td>AAC</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-          </tr>
-          <tr>
-            <td>AAC</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-          </tr>
-          <tr>
-            <td>AAC</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-          </tr>
-          <tr>
-            <td>AAC</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-          </tr>
-          <tr>
-            <td>AAC</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-          </tr>
-          <tr>
-            <td>AAC</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-            <td>AUSTRALIAN COMPANY </td>
-            <td>$1.38</td>
-            <td>+2.01</td>
-            <td>-0.36%</td>
-          </tr>
-        
+          ''')
+  for i in allRecords:
+          print("<tr>")
+          for j in i:
+               print("<td>")
+               print(i[j])
+               print("</td>")
+          print("</tr>")
+  print('''
         </tbody>
       </table>
     </div>
@@ -289,9 +163,7 @@ $(window).on("load resize ", function() {
   </script>
 </body>
 </html>
-'''
-
-    return viewAllString
+''')
 
 
 
