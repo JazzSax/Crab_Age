@@ -7,6 +7,11 @@ class Views():
     def viewAll(self, allRecords):
         print(htmlContent.viewAll(allRecords))
     def showForm(self):
+
         print(htmlContent.showForm())
-    def showOutput(self, sex, length, diameter, height, weight, shucked, viscera, shell, age):
-        print(htmlContent.showOutput(sex, length, diameter, height, weight, shucked, viscera, shell, age))
+    def showOutput(self, result, sex, length, diameter, height, weight, shucked, viscera, shell, age):
+        print(htmlContent.showOutput(result,sex, length, diameter, height, weight, shucked, viscera, shell, age))
+    def home(self):
+        print(htmlContent.home())
+    def search(self, result):
+        print(htmlContent.viewAll(result))

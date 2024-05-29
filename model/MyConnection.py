@@ -1,7 +1,7 @@
 
 import mysql.connector
 
-class MyConnection():   
+class MyConnection:   
        
         def __init__(self, host, user, pwd,dbase):    
                 self.host = host
