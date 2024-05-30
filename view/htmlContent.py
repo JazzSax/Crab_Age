@@ -194,7 +194,7 @@ def showForm():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crab Age Prediction</title>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
@@ -397,7 +397,7 @@ def showOutput(res,result, sex, length, diameter, height, weight, shucked, visce
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crab Age Prediction</title>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
@@ -561,6 +561,10 @@ label{{
             <li>
               <label for="age">Age</label>
               <input type="text" class="form-control inputFields" id="age" name="age" value="{age} months" readonly>
+               <li id="center-btn">
+               
+                <input type="submit" id="join-btn" name="back" alt="back" value="Back" ">
+            </li>
             </li>
                <li id="center-btn">
               <input type="submit" id="join-btn" name="clear" alt="clear" value="Clear">
@@ -585,7 +589,7 @@ def home():
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="index.css">
-  <title>Document</title>
+  <title>Crab Website</title>
   
   <style>
   @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
