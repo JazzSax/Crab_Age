@@ -514,7 +514,7 @@ body {{
                 <h2>Mission to Save Crab</h2>
                 <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
                 <p>The Future Is Here</p>
-                
+                <h2>{res}</h2>
             </div>
          
         </div>
