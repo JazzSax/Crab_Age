@@ -332,35 +332,40 @@ body {
           <ul class="noBullet">
             <li>
               <label for="sex"></label>
-              <input type="text" class="form-control inputFields" id="sex" name="sex" placeholder="Sex" value=""  required>
+              
+              <select id="sex" name="sex" class="form-trolcon inputFields" required>
+                <option value="M">M</option>
+                <option value="F">F</option>
+         
+                </select>
           </li>
             <li>
               <label for="length"></label>
-              <input type="text" class="form-control inputFields" id="length" name="length" placeholder="Length" value="" required />
+              <input type="number" class="form-control inputFields" id="length" name="length" placeholder="Length" value="" required />
             </li>
             <li>
               <label for="diameter"></label>
-              <input type="text" class="form-control inputFields" id="diameter" name="diameter" placeholder="Diameter" value="" required>
+              <input type="number" class="form-control inputFields" id="diameter" name="diameter" placeholder="Diameter" value="" required>
             </li>
             <li>
               <label for="height"></label>
-              <input type="text" class="form-control inputFields" id="height" name="height" placeholder="Height" value="" required>
+              <input type="number" class="form-control inputFields" id="height" name="height" placeholder="Height" value="" required>
             </li>
             <li>
               <label for="weight"></label>
-              <input type="text" class="form-control inputFields" id="weight" name="weight" placeholder="Weight" value="" required>
+              <input type="number" class="form-control inputFields" id="weight" name="weight" placeholder="Weight" value="" required>
             </li>
             <li>
               <label for="shucked_weight"></label>
-              <input type="text" class="form-control inputFields" id="shucked_weight" name="shucked_weight" placeholder="Shucked Weight" value="" required>
+              <input type="number" class="form-control inputFields" id="shucked_weight" name="shucked_weight" placeholder="Shucked Weight" value="" required>
             </li>
             <li>
               <label for="viscera_weight"></label>
-              <input type="text" class="form-control inputFields" id="viscera_weight" name="viscera_weight" placeholder="Viscera Weight" value="" required>
+              <input type="number" class="form-control inputFields" id="viscera_weight" name="viscera_weight" placeholder="Viscera Weight" value="" required>
             </li>
             <li>
               <label for="shell_weight"></label>
-              <input type="text" class="form-control inputFields" id="shell_weight" name="shell_weight" placeholder="Shell Weight" value="" required>
+              <input type="number" class="form-control inputFields" id="shell_weight" name="shell_weight" placeholder="Shell Weight" value="" required>
             </li>
                
              <li id="center-btn">
@@ -385,7 +390,7 @@ body {
 
 # Enable CGI error reporting for debugging purposes
 
-def showOutput(result, sex, length, diameter, height, weight, shucked, viscera, shell, age):
+def showOutput(res,result, sex, length, diameter, height, weight, shucked, viscera, shell, age):
     inputForm = f"""
 <!DOCTYPE html>
 <html lang="en">
@@ -509,6 +514,7 @@ body {{
                 <h2>Mission to Save Crab</h2>
                 <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
                 <p>The Future Is Here</p>
+                
             </div>
          
         </div>

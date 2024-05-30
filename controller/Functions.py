@@ -32,11 +32,11 @@ def input():
      view = Views()
      view.showForm()
 
-def output(result,sex, length, diameter, height, weight, shucked, viscera, shell, age):
+def output(res,result,sex, length, diameter, height, weight, shucked, viscera, shell, age):
      sys.path.append(script_dir + "/view/")
      from Views import Views
      view = Views()
-     view.showOutput(result,sex, length, diameter, height, weight, shucked, viscera, shell, age)
+     view.showOutput(res,result,sex, length, diameter, height, weight, shucked, viscera, shell, age)
 
     
 
@@ -57,6 +57,7 @@ def predict(sexx, lngth, diam, hght, wght, shkwght, vscwght, shllwght):
           from models.ShowPrediction import Prediction
           i = Prediction(sexx, lngth, diam, hght, wght, shkwght, vscwght, shllwght)
           age = i.GetPrediction()
+          
           return age
 
     except ImportError as e:
