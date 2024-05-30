@@ -341,31 +341,31 @@ body {
           </li>
             <li>
               <label for="length"></label>
-              <input type="number" class="form-control inputFields" id="length" name="length" placeholder="Length" value="" required />
+              <input type="number"min="0"  max="20" step="0.01"  class="form-control inputFields" id="length" name="length" placeholder="Length" value="" required />
             </li>
             <li>
               <label for="diameter"></label>
-              <input type="number" class="form-control inputFields" id="diameter" name="diameter" placeholder="Diameter" value="" required>
+              <input type="number" min="0"  max="20" step="0.01" class="form-control inputFields" id="diameter" name="diameter" placeholder="Diameter" value="" required>
             </li>
             <li>
               <label for="height"></label>
-              <input type="number" class="form-control inputFields" id="height" name="height" placeholder="Height" value="" required>
+              <input type="number" min="0"  max="20" step="0.01" class="form-control inputFields" id="height" name="height" placeholder="Height" value="" required>
             </li>
             <li>
               <label for="weight"></label>
-              <input type="number" class="form-control inputFields" id="weight" name="weight" placeholder="Weight" value="" required>
+              <input type="number" min="0"  max="20" step="0.01" class="form-control inputFields" id="weight" name="weight" placeholder="Weight" value="" required>
             </li>
             <li>
               <label for="shucked_weight"></label>
-              <input type="number" class="form-control inputFields" id="shucked_weight" name="shucked_weight" placeholder="Shucked Weight" value="" required>
+              <input type="number" min="0"  max="20" step="0.01"class="form-control inputFields" id="shucked_weight" name="shucked_weight" placeholder="Shucked Weight" value="" required>
             </li>
             <li>
               <label for="viscera_weight"></label>
-              <input type="number" class="form-control inputFields" id="viscera_weight" name="viscera_weight" placeholder="Viscera Weight" value="" required>
+              <input type="number" min="0"  max="20" step="0.01" class="form-control inputFields" id="viscera_weight" name="viscera_weight" placeholder="Viscera Weight" value="" required>
             </li>
             <li>
               <label for="shell_weight"></label>
-              <input type="number" class="form-control inputFields" id="shell_weight" name="shell_weight" placeholder="Shell Weight" value="" required>
+              <input type="number" class="form-control inputFields" id="shell_weight" name="shell_weight" placeholder="Shell Weight" min="0"  max="20" step="0.01" value="" required>
             </li>
                
              <li id="center-btn">
