@@ -316,6 +316,7 @@ body {
             form.submit();
         }
     </script>
+    
 </head>
 <body>
     <div class="signupSection">
@@ -508,7 +509,20 @@ label{{
 }}
 
     </style>
-  
+<script>
+        function submitForm(action) {{
+            var form = document.forms['signupform'];
+            var backInput = document.getElementById('back-input');
+
+            if (action === 'back') {{
+                backInput.value = 'true';
+            }} else {{
+                backInput.value = '';
+            }}
+
+            form.submit();
+        }}
+    </script>
 
 </head>
 <body>
@@ -518,7 +532,9 @@ label{{
                 <h2>Mission to Save Crab</h2>
                 <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
                 <p>The Future Is Here</p>
-                 <h2>{res}</h2>
+                  <h2>{res}</h2>
+                  <input type="hidden" id="back-input" name="back" value="">
+                  <input type="button" id="join-btn" alt="back" value="Back" onclick="submitForm('back')">
             </div>
          
         </div>
