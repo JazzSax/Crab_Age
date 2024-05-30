@@ -7,7 +7,6 @@ import os
 
 script_dir = os.path.dirname(os.path.dirname(__file__))
 
-
 form = cgi.FieldStorage()
 all = form.getvalue("ALL")
 add = form.getvalue("ADD")
