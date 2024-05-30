@@ -9,8 +9,8 @@ class Views():
     def showForm(self):
 
         print(htmlContent.showForm())
-    def showOutput(self, result, sex, length, diameter, height, weight, shucked, viscera, shell, age):
-        print(htmlContent.showOutput(result,sex, length, diameter, height, weight, shucked, viscera, shell, age))
+    def showOutput(self, res,result, sex, length, diameter, height, weight, shucked, viscera, shell, age):
+        print(htmlContent.showOutput(res,result,sex, length, diameter, height, weight, shucked, viscera, shell, age))
     def home(self):
         print(htmlContent.home())
     def search(self, result):

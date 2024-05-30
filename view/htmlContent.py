@@ -450,10 +450,14 @@ body {{
     color: rgba(10, 180, 180, 1);
   }}
 }}
-
+label{{
+  margin-right:30px;
+  font-size: 20px;
+}}
 .details{{
     height: 100%;
     margin:auto;
+    padding:30px;
 }}
 .signupForm {{
   width: 70%;
@@ -514,7 +518,7 @@ body {{
                 <h2>Mission to Save Crab</h2>
                 <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
                 <p>The Future Is Here</p>
-                <h2>{res}</h2>
+                 <h2>{res}</h2>
             </div>
          
         </div>
@@ -523,40 +527,40 @@ body {{
             <h2>{result}</h2>
           <ul class="noBullet">
             <li>
-              <label for="sex"></label>
+              <label for="sex">Sex</label>
               <input type="text" class="form-control inputFields" id="sex" name="sex" value="{sex}"  readonly>
           </li>
             <li>
-              <label for="length"></label>
+              <label for="length">Length</label>
               <input type="text" class="form-control inputFields" id="length" name="length" value="{length}" readonly />
             </li>
             <li>
-              <label for="diameter"></label>
+              <label for="diameter">Diameter</label>
               <input type="text" class="form-control inputFields" id="diameter" name="diameter" value="{diameter}" readonly>
             </li>
             <li>
-              <label for="height"></label>
+              <label for="height">Height</label>
               <input type="text" class="form-control inputFields" id="height" name="height" value="{height}" readonly>
             </li>
             <li>
-              <label for="weight"></label>
+              <label for="weight">Weight</label>
               <input type="text" class="form-control inputFields" id="weight" name="weight" value="{weight}" readonly>
             </li>
             <li>
-              <label for="shucked_weight"></label>
+              <label for="shucked_weight">Shucked Weight</label>
               <input type="text" class="form-control inputFields" id="shucked_weight" name="shucked_weight" value="{shucked}" readonly>
             </li>
             <li>
-              <label for="viscera_weight"></label>
+              <label for="viscera_weight">Viscera Weight</label>
               <input type="text" class="form-control inputFields" id="viscera_weight" name="viscera_weight" value="{viscera}" readonly>
             </li>
             <li>
-              <label for="shell_weight"></label>
+              <label for="shell_weight">Shell Weight</label>
               <input type="text" class="form-control inputFields" id="shell_weight" name="shell_weight" value="{shell}" readonly>
             </li>
             <li>
-              <label for="age"></label>
-              <input type="text" class="form-control inputFields" id="age" name="age" value="{age}" readonly>
+              <label for="age">Age</label>
+              <input type="text" class="form-control inputFields" id="age" name="age" value="{age} months" readonly>
             </li>
                <li id="center-btn">
               <input type="submit" id="join-btn" name="clear" alt="clear" value="Clear">
