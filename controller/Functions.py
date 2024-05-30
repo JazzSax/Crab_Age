@@ -54,10 +54,9 @@ def predict(sexx, lngth, diam, hght, wght, shkwght, vscwght, shllwght):
     try:
           
           sys.path.append(script_dir)
-          from models.ShowPrediction import Prediction
+          from Utilities.ShowPrediction import Prediction
           i = Prediction(sexx, lngth, diam, hght, wght, shkwght, vscwght, shllwght)
           age = i.GetPrediction()
-          
           return age
 
     except ImportError as e:

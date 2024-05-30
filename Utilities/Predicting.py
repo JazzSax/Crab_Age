@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from joblib import load
-from models.LearningModel import X_train  
+from Utilities.LearningModel import X_train  
 import os
 import sys
 

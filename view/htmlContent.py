@@ -749,7 +749,7 @@ h1 {
         <h1>Crab Age Prediction</h1>
         <h3>Predict the crab age based on some attributes</h3>
         <input type ="submit" name ="ALL" value = "View Records"/>
-        <input type ="submit" name ="ADD" value = "Add Record"/>
+        <input type ="submit" name ="ADD" value = "Predict Age"/>
       </form>
   
     </div>

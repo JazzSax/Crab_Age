@@ -1,7 +1,7 @@
 
 import pandas as pd
-from models.Predicting import CrabAgePredictor
-from models.LearningModel import X_train  
+from Utilities.Predicting import CrabAgePredictor
+from Utilities.LearningModel import X_train  
 
 
 class Prediction:
